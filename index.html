@@ -1,21 +1,61 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<title>TITRE </title>
+    <title>Mon Site de Jeux</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<h1> Accueil </h1>
-	<p> Bienvenue sur la page des principales balises HTML.</p>
-	<h2> Les Balises </h2>
-	<p> Voici quelques-unes des balises HTML les plus utilisées:</p>
-	<li>	< h1 > - pour les titres principaux  </li>	
-	<li>	< p > - pour les paragraphes </li>	
-	<li>	< a > - pour les liens </li>	
-	<li>	< img > - pour les images	</li>	
-	<li>	< ul > et < li > - pour les listes non ordonnées </li>	
-	<h2>Page Info </h2>
-	<p>Cette page est un exmple de présentation des balises HTML.</p>
-	<p>Voici un exemple d'iframe integrant un jeu:</p>
-	<br>
-	<p> pour plus d'informations , visitez la page du lanceur Pyxel</p>
-</body>
+    <header>
+        <div class="navbar">
+            <a href="#accueil">Accueil</a>
+            <a href="#jeux">Jeux</a>
+            <a href="#source">Source</a>
+        </div>
+    </header>
+
+<div id="accueil" class="section">
+    <h1>Bienvenue sur Mon Site de Jeux</h1>
+    <p>Ce site propose une sélection de jeux intéressants et leurs sources.</p>
+
+    <!-- Début de la Sous-Section CV -->
+    <div class="cv-section">
+        <img src="profile.png" alt="Photo de Profil" class="photo-profil">
+        <h3>A Propos de Moi</h3>
+        <p>Études: [Détails des études]</p>
+        <p>Hobbies: [Liste des hobbies]</p>
+        <ul>
+            <li>Hobby 1</li>
+            <li>Hobby 2</li>
+            <!-- Ajouter plus de hobbies si nécessaire -->
+        </ul>
+    </div>
+    <!-- Fin de la Sous-Section CV -->
+</div>
+
+    <div id="jeux" class="section">
+    <h2>Jeux</h2>
+	<div class="iframe-container">
+    		<iframe src="https://kitao.github.io/pyxel/wasm/launcher/?run=estebe2000.jeux.menu-c" width="480" height="360">Version 1</iframe>
+    		<iframe src="https://kitao.github.io/pyxel/wasm/launcher/?run=estebe2000.jeux.b" width="480" height="360">Version 2</iframe>
+	</div>
+    </div>
+
+<div id="source" class="section">
+    <h2>Sources</h2>
+    <ul>
+        <li><a href="https://kitao.github.io/pyxel/wasm/launcher/" target="_blank">Pyxel Launcher</a></li>
+        <li><a href="https://github.com/kitao/pyxel/blob/main/docs/README.fr.md" target="_blank">Site Officiel de Pyxel</a></li>
+        <li><a href="https://docs.python.org" target="_blank">Documentation de Python</a></li>
+        <li><a href="https://www.w3schools.com" target="_blank">W3Schools pour HTML et CSS</a></li>
+    </ul>
+</div>
+<hr>
+<br>
+<br>
+<br>
+<br>
+
+    <footer class="navbar">
+        <p>© 2023 Mon Site de Jeux. Tous droits réservés.</p>
+    </footer></body>
 </html>
